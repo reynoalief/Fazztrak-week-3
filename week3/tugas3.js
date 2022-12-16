@@ -16,20 +16,19 @@ const name = [
   "Olivia",
   "Penelope",
 ];
+//sorting
+// name.sort();
 
 function searchName(nama, limit, callback) {
-  let lowerName = name.map((hurufKecil) => {
-    return hurufKecil.toLowerCase();
-  });
-
-  let filterNama = lowerName.filter(
-    (namaTarget) => namaTarget.indexOf(nama) !== -1
+  //logic filter nama dengan kondisi lowercase dimana index
+  let filterNama = name.filter((namaTarget) =>
+    namaTarget.toLowerCase().includes(nama.toLowerCase())
   );
-
+  //logic kondisi limit
   filterNama = filterNama.slice(0, limit);
   callback(filterNama);
 }
-
+// callback menampilkan hasil
 function showResult(data) {
   console.log(data);
 }
