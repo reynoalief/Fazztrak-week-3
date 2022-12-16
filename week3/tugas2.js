@@ -1,0 +1,10 @@
+//unshift
+//shfit
+//pop
+//push
+//some
+//every
+//concat
+//map
+//splice
+//slice
