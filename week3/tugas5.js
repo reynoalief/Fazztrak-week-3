@@ -23,19 +23,12 @@ console.log(newData);
 
 //destruction
 
-let getAddress = {
-  street: data.address.street,
-  suite: data.address.suite,
-  city: data.address.city,
-  zipcode: data.address.zipcode,
-};
-
-// let { street, city } = getAddress;
-// console.log(street,city);
+let { street, city } = data.address;
+console.log(street, city);
 
 let {
   address: { street: jalan },
   address: { city: kota },
 } = data;
 
-// console.log(jalan, kota);
+console.log(jalan, kota);
